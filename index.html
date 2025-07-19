@@ -5,17 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transition and transformation</title>
     <style>
+        body{
+            margin: 50px;
+        }
         .box{
             height: 200px;
             width: 200px;
             background-color: steelblue;
             margin-bottom: 5px;
-            transition: 2s ease-out;
+            /* transition: width 2s linear, background-color 3s;
+             */
+             transition: transform 3s, background-color 3s;
         }
         .box:hover{
-            width: 500px;
+            /* width: 500px; */
+            transform: rotate(45deg);
+            background-color: blueviolet;
             /* transform: rotate(45deg); */
-            transform: translate(50px);
+            /* transform: translate(50px); */
         }
     </style>
 </head>
